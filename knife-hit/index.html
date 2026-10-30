@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23fb923c%27/%3E%3C/svg%3E">
+  <title>Knife Hit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Knives</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+    </header>
+
+    <div class="stage">
+      <canvas id="game"></canvas>
+      <div class="overlay" id="overlay">
+        <h1 id="title">Knife Hit</h1>
+        <p id="message">Tap to throw. Never hit a knife already in the log.</p>
+        <button id="action" type="button">Play</button>
+      </div>
+    </div>
+
+    <footer class="hint">Every knife makes the log spin faster.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

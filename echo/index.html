@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23a78bfa%27/%3E%3C/svg%3E">
+  <title>Echo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+      <div class="stat audio-stat">
+        <span class="label">Audio</span>
+        <button class="sound" id="sound" type="button" aria-pressed="true">On</button>
+      </div>
+    </header>
+
+    <div class="stage">
+      <div class="pads" id="pads">
+        <button class="pad pad-0" data-pad="0" type="button" aria-label="green pad"></button>
+        <button class="pad pad-1" data-pad="1" type="button" aria-label="red pad"></button>
+        <button class="pad pad-2" data-pad="2" type="button" aria-label="yellow pad"></button>
+        <button class="pad pad-3" data-pad="3" type="button" aria-label="blue pad"></button>
+      </div>
+      <div class="overlay" id="overlay">
+        <h1 id="title">Echo</h1>
+        <p id="message">Watch the pads light up, then repeat the pattern. One wrong tap ends the run.</p>
+        <button id="action" type="button">Play</button>
+      </div>
+    </div>
+
+    <p class="status" id="status">Press play to begin.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

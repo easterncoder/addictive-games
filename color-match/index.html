@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%235eead4%27/%3E%3C/svg%3E">
+  <title>Color Match Reflex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Combo</span>
+        <span id="combo">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+    </header>
+
+    <div class="timer" aria-hidden="true">
+      <div class="timer-bar" id="timerBar"></div>
+    </div>
+
+    <section class="board" id="board">
+      <p class="prompt">Tap the ink color, not the word</p>
+      <div class="word" id="word">READY</div>
+      <div class="feedback" id="feedback"></div>
+    </section>
+
+    <div class="buttons" id="buttons"></div>
+
+    <footer class="hint">Keys 1 to 4 work too. Wrong taps cost 3 seconds.</footer>
+
+    <div class="overlay" id="overlay">
+      <h1 id="title">Color Match</h1>
+      <p id="message">The word lies. Trust the ink color and beat the clock.</p>
+      <button id="action" type="button">Play</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

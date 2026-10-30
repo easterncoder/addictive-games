@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%235eead4%27/%3E%3C/svg%3E">
+  <title>Word Hunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Time</span>
+        <span id="time">90</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+    </header>
+
+    <div class="stage">
+      <div class="grid" id="grid"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="overlay" id="overlay">
+        <h1 id="title">Word Hunt</h1>
+        <p id="message">Words hide across, down, and diagonally. Drag the letters or tap the first and last letter.</p>
+        <button id="action" type="button">Play</button>
+      </div>
+    </div>
+
+    <div class="words">
+      <div class="words-head">
+        <span>Words</span>
+        <span id="word-count">0 / 6</span>
+      </div>
+      <div class="word-list" id="word-list"></div>
+    </div>
+
+    <footer class="hint">Words hide across, down, and diagonally. Backwards counts too.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
